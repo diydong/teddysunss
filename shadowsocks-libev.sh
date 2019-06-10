@@ -295,7 +295,9 @@ pre_install(){
     char=`get_char`
     #Install necessary dependencies
     yum install -y epel-release && yum makecache
+    yum install -y c-ares c-ares-devel
     yum install -y unzip openssl openssl-devel gettext gcc autoconf libtool automake make asciidoc xmlto udns-devel libev-devel pcre pcre-devel
+    
 }
 
 download() {
